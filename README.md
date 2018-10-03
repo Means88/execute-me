@@ -1,4 +1,4 @@
-# Execute Me [![npm version](https://badge.fury.io/js/execute-me.svg)](https://badge.fury.io/js/execute-me)
+# Execute Me [![npm version](https://badge.fury.io/js/execute-me.svg)](https://badge.fury.io/js/execute-me) [![Build Status](https://travis-ci.org/Means88/execute-me.svg?branch=master)](https://travis-ci.org/Means88/execute-me)
 
 Automatically generate command line interfaces from JavaScript functions.
 
