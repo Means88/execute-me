@@ -31,37 +31,37 @@ executeMe(eatFood);
 
 ```
 
-```bash
-> ./example/eatFood.js --food "rice balls" -w 2.2 --check
-< 5 rice balls weigh 2.2 kilograms. √
+```console
+$ ./example/eatFood.js --food "rice balls" -w 2.2 --check
+5 rice balls weigh 2.2 kilograms. √
 
 ```
 
-```bash
-> ./example/eatFood.js --version
-< 0.1.0-beta3
+```console
+$ ./example/eatFood.js --version
+0.1.0-beta3
 
 ```
 
-```bash
-> ./example/eatFood.js -h
-< Usage: eatFood [options]
-<
-< A function named eatFood.
-<
-< Options:
-<
-<  -V, --version          output the version number
-<  -c, --count <count>    number of food (default: 5)
-<  -f, --food <food>      what for dinner
-<  -w, --weight <weight>  how much would you like to eat
-<  --check                yes?
-<  -h, --help             output usage information
+```console
+$ ./example/eatFood.js -h
+Usage: eatFood [options]
+
+A function named eatFood.
+
+Options:
+
+  -V, --version          output the version number
+  -c, --count <count>    number of food (default: 5)
+  -f, --food <food>      what for dinner
+  -w, --weight <weight>  how much would you like to eat
+  --check                yes?
+  -h, --help             output usage information
 
 ```
 
 ## Supported Types
-Only number, string and boolean is suppoirted. Union types are not supported yet.
+Only number, string and boolean is supported. Union types are not supported yet.
 ### integer
 alias:
 - int
