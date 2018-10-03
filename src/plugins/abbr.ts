@@ -1,8 +1,8 @@
-import { FunctionDescription } from '../function/parse';
+import { FunctionDescription } from "../function/parse";
 
 export function abbr(description: FunctionDescription): FunctionDescription {
   const usedName = new Set<string>();
-  description.options.forEach((option) => {
+  description.options.forEach(option => {
     if (option.shortName) {
       usedName.add(option.shortName);
     }
@@ -22,14 +22,15 @@ export function abbr(description: FunctionDescription): FunctionDescription {
     if (usedName.has(option.longName[0])) {
       return;
     }
-    result[index] = Object.assign({}, option, {
-      shortName: option.longName[0],
-    });
+    result[index] = {
+      ...option,
+      shortName: option.longName[0]
+    };
     usedName.add(option.longName[0]);
   });
 
   return {
     description: description.description,
-    options: result,
+    options: result
   };
 }

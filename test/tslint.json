@@ -5,6 +5,9 @@
       "no-non-null-assertion": false,
       "no-implicit-dependencies": [true, "dev"],
       "no-unused-expression": false,
-      "no-unsafe-any": false
+      "no-unsafe-any": false,
+      "jsdoc-format": false,
+      "typedef": false,
+      "object-literal-sort-keys": false
     }
   }
