@@ -1,6 +1,6 @@
 {
   "name": "execute-me",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Automatically generate command line interfaces from JavaScript functions.",
   "main": "lib/index.js",
   "scripts": {

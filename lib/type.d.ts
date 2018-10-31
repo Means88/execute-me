@@ -1,4 +1,4 @@
-export declare const Parser: any;
+export declare const transformers: any;
 export declare function isIntegerType(a: string): boolean;
 export declare function isFloatType(a: string): boolean;
 export declare function isStringType(a: string): boolean;

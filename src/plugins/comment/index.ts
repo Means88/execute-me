@@ -11,6 +11,7 @@ export function getComment(ast: FunctionExpression): string {
   }
   return "";
 }
+
 export function comment(
   description: FunctionDescription,
   ast: FunctionExpression

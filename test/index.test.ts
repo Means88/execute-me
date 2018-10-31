@@ -7,10 +7,23 @@ describe("index", () => {
     exec(
       `${path.join(
         __dirname,
-        "./example/index.js --foo 1.1 -b test --baz 5 --check"
+        "./example/index.js --foo 1.1 -b test --baz 5 --check fuck me no"
       )}`,
       (error, stdout, stderr) => {
         expect(stdout.trim()).equal(`1.1,test,5,true`);
+        done();
+      }
+    );
+  });
+
+  it("should get correct args", done => {
+    exec(
+      `${path.join(
+        __dirname,
+        "./example/args.js fuck me"
+      )}`,
+      (error, stdout, stderr) => {
+        expect(stdout.trim()).equal(`["fuck","me"]`);
         done();
       }
     );

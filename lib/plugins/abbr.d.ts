@@ -1,2 +1,2 @@
-import { FunctionDescription } from '../function/parse';
+import { FunctionDescription } from "../function/parse";
 export declare function abbr(description: FunctionDescription): FunctionDescription;

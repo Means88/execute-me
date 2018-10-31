@@ -28,6 +28,6 @@ export interface DocNode {
     tags: TagNode[];
 }
 export declare type ParamOptions = ParamOption[];
-export declare function parseFunction(fn: string, plugins?: Array<Plugin>): FunctionDescription;
+export declare function parseFunction(fn: string, plugins?: Plugin[]): FunctionDescription;
 export declare function getParamName(paramNode: BaseNode): string;
 export declare function getParamOptions(paramNode: BaseNode): ParamOption;
