@@ -499,6 +499,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@means88/commander@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@means88/commander/-/commander-0.1.0.tgz#8c377b5f66547959bfb37d3bddfa2bd5585ff340"
+
 "@sinonjs/commons@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.0.2.tgz#3e0ac737781627b8844257fadc3d803997d0526e"
@@ -1095,7 +1099,7 @@ combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@^2.12.1, commander@^2.18.0:
+commander@^2.12.1:
   version "2.18.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.18.0.tgz#2bf063ddee7c7891176981a2cc798e5754bc6970"
 

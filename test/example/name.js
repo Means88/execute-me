@@ -2,11 +2,14 @@
 
 const { executeMe } = require('../../lib');
 
-function f(args) {
+function f(name) {
   /**
    * test function.
+   *
+   * @version 0.0.1
+   * @param {string} foo - foo
    */
-  console.log(JSON.stringify(arguments[1]));
+  console.log(name);
 }
 
 executeMe(f);

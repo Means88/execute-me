@@ -38,7 +38,7 @@
   "dependencies": {
     "@babel/parser": "^7.1.0",
     "@babel/types": "^7.1.0",
-    "commander": "^2.18.0",
+    "@means88/commander": "^0.1.0",
     "doctrine": "^2.1.0"
   },
   "devDependencies": {

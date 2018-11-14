@@ -1,4 +1,4 @@
-import { Command } from "commander";
+import { Command } from "@means88/commander";
 import { parseFunction, Plugin } from "./function/parse";
 import { abbr } from "./plugins/abbr";
 import { comment } from "./plugins/comment";
@@ -30,7 +30,7 @@ export function getArguments(fn: FunctionType, plugins: Plugin[]): any[] {
     program.version(fnDescription.version);
   }
   program.description(fnDescription.description || "");
-  program.usage('[options] <args ...>');
+  program.usage("[options] <args ...>");
   fnDescription.options.forEach(
     ({ shortName, longName, type, name, description, default: d }) => {
       let option = "";
@@ -51,6 +51,8 @@ export function getArguments(fn: FunctionType, plugins: Plugin[]): any[] {
     }
   );
   program.parse(process.argv);
-  const args = fnDescription.options.map(i => program[getOptionName(i.name)]);
+  const args = fnDescription.options.map(i =>
+    program.getOption(getOptionName(i.name))
+  );
   return [...args, program.args];
 }

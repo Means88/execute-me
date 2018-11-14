@@ -18,10 +18,7 @@ describe("index", () => {
 
   it("should get correct args", done => {
     exec(
-      `${path.join(
-        __dirname,
-        "./example/args.js fuck me"
-      )}`,
+      `${path.join(__dirname, "./example/args.js fuck me")}`,
       (error, stdout, stderr) => {
         expect(stdout.trim()).equal(`["fuck","me"]`);
         done();
@@ -47,6 +44,16 @@ describe("index", () => {
       )}`,
       (error, stdout, stderr) => {
         expect(stdout.trim()).equal(`1.1,test,5,undefined`);
+        done();
+      }
+    );
+  });
+
+  it("should get conflict name", done => {
+    exec(
+      `${path.join(__dirname, "./example/name.js")}`,
+      (error, stdout, stderr) => {
+        expect(stdout.trim()).equal("undefined");
         done();
       }
     );
